@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:pedal_commander/view/home/view/home_view.dart';
 
 void main() => runApp(const MyApp());
@@ -9,7 +10,11 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Material App',
+      debugShowCheckedModeBanner: false,
+      title: 'Pedal Commander',
+      theme: ThemeData(
+        textTheme: GoogleFonts.nunitoTextTheme()
+      ),
       home: HomeView(),
     );
   }

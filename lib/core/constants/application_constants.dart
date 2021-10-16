@@ -7,4 +7,5 @@ class ApplicationConstants {
    static const Color cyan = Color(0xff00E0FF);
    static const Color concrete = Color(0xffF2F2F2);
    static const Color torchRed = Color(0xffFF002E);
+   static const Color myGrey = Color(0xffC4C4C4);
  }
