@@ -162,3 +162,202 @@ class _HomeViewState extends State<HomeView> {
     );
   }
 }
+
+
+/*
+{
+	"print":{
+		"scope": "dart",
+		"prefix": "pr",
+		"body": "print('$1');"
+	},
+	"Magic Number": {
+		"scope": "dart",
+		"prefix": "magnum",
+		"body": "static const $1 = $2;",
+		"description": "magic number creator"
+	},
+	
+	"Singleton Eager": {
+		"scope": "dart",
+		"prefix": "sngltnE",
+		"body": [
+			"class $1 {",
+			" static $1 _instance = $1._init();",
+			"static $1 get instance {",
+			"if (_instance == null) _instance = $1._init();",
+			"return _instance;",
+			"}",
+
+			"$1._init();",
+			"}"
+
+		],
+		"description": "magic number creator"
+	},
+	"easy route":{
+		"scope": "dart",
+		"prefix": "myRoute",
+		"body": "(context) => $1(),"
+	},
+	"icon":{
+		"scope": "dart",
+		"prefix": "icn",
+		"body": "Icon(Icons.$1)"
+	},
+	"color":{
+		"scope": "dart",
+		"prefix": "clrh",
+		"body": "Color(0xff$1)"
+	},
+	"color2":{
+		"scope": "dart",
+		"prefix": "clr",
+		"body": "Colors.$1"
+	},
+	"decoration":{
+		"scope": "dart",
+		"prefix": "dcrtn",
+		"body": "decoration:BoxDecoration($1),"
+	},
+
+	"my stless page":{
+		"scope": "dart",
+		"prefix": "myPage",
+		"body": [
+			"import 'package:flutter/material.dart';",
+			"",
+			"class $1 extends StatelessWidget {",
+			"@override",
+			"Widget build(BuildContext context) {",
+			" return Scaffold(",
+			"body: Center(",
+			"child: Text('$1')",
+			"),",
+			");",
+			"}",
+			"}",
+		]
+	},
+	"curved box":{
+		"scope": "dart",
+		"prefix": "crvdBox",
+		"body": [
+			"Container(",
+			"decoration: BoxDecoration(",
+			  "borderRadius: 0.radius$1",
+			"),",
+			"child: ClipRRect(",
+			 " borderRadius: 0.radius$1,",
+			  "child: $2,",
+			"),",
+			")"
+		]
+	},
+	"method class":{
+		"scope": "dart",
+		"prefix": "mthdClass",
+		"body": [
+			"class $1 with Connect {",
+			"final String methodName = '$2';",
+			"",
+			"}",
+		]
+	},
+	"ftr":{
+		"scope": "dart",
+		"prefix": "ftr",
+		"body": [
+			"FutureBuilder(",
+      "future: Future.wait([$1]),",
+      "builder: (context,AsyncSnapshot s) {",
+       " if (s.hasData) {",
+          "return $2;",
+        "} else if (s.hasError) {",
+          "return ErrorFuture();",
+        "} else {",
+        "  return Center(child: CircularProgressIndicator());",
+       " }",
+      "},",
+    ")"
+		]
+	},
+	"make service":{
+		"scope": "dart",
+		"prefix": "mkService",
+		"body": [
+			"$1($3) {",
+			"return connect(method: methodName, data: {",
+			"'data': {",
+			"'firmaKodu': AppConstants.FIRMA_KODU,",
+			"'methodName': '$1',",
+			"'serviceName': '$2'",
+			"}",
+			"});",
+			"}",
+		],
+	},
+
+	"make service 2":{
+		"scope": "dart",
+		"prefix": "asService",
+		"body": [
+			"$1($3) {",
+			"return connect(method: methodName, data: {",
+			"'data': {",
+			"'yonetimId': LocaleManager.instance.getUserData.yonetimId,",
+			"'userToken': LocaleManager.instance.getUserData.mobileToken,",
+			"'firmaKodu': AppConstants.FIRMA_KODU,",
+			"'methodName': '$1',",
+			
+			"}",
+			"});",
+			"}",
+		],
+	},
+	"myCard":{
+		"scope": "dart",
+		"prefix": "mycrd",
+		"body": [
+			"decoration: BoxDecoration(",
+		"color: Colors.white,",
+		"borderRadius: 0.radius10,",
+		"boxShadow: AppConstants.shadow_1,",
+	  "),"
+		]
+	},
+	"requireds":{
+		"scope": "dart",
+		"prefix": "req",
+		"body": "@required $1 $2,"
+	},
+
+	"json decode":{
+		"scope": "dart",
+		"prefix": "jde",
+		"body": "json.decode($1);"
+	},
+	"json encode":{
+		"scope": "dart",
+		"prefix": "jen",
+		"body": "json.encode($1);"
+	},
+	"user data":{
+		"scope": "dart",
+		"prefix": "usrData",
+		"body": "LocaleManager.instance.getUserData.$1",
+	},
+	"test":{
+		"scope": "dart",
+		"prefix": "tst",
+		"body": [
+			"import 'package:flutter_test/flutter_test.dart';",
+			"main() {",
+			"  setUp(() {});",
+  			"test('sample test', () {});",
+			"}"
+	]
+	}
+
+}
+*/
